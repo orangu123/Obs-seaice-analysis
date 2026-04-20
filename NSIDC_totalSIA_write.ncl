@@ -8,7 +8,7 @@ begin
 ;year =     ; only used for daily data
   version = "v04r00" ; "v06r00"
 
-;  hemi    = "S"  ;S or N
+  hemi    = "S"  ;S or N
  
   diri = "/g/data/gv90/wrh581/NSIDC/"
 

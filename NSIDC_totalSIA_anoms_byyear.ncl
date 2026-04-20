@@ -8,14 +8,14 @@ begin
   yrst = 1979
   yren = 2025
   clst = 1979  ;climatology end
-  clen = 2008  ;climatology start
+  clen = 2018  ;climatology start
 
 ;refyear = yren
 
-  refyear = (/2023,2024, 2025/)  ;years to highlight
+  refyear = (/2023, 2024/)  ;years to highlight
 
   diri = "/g/data/gv90/wrh581/NSIDC/"
-  fili = "NSIDC_SH_totalSIA_monthly_"+(/"v05r00.nc","v03r00.nc"/)
+  fili = "NSIDC_SH_totalSIA_monthly_"+(/"v06r00.nc","v04r00.nc"/)
   iNam = "SIE_cdr"
 
   diro = "plots/"
@@ -65,7 +65,11 @@ begin
 
   end do
 
-
+sd = dim_stddev_n(SIA_ym({clst:clen},:), 0)
+;print(sd)
+print(SIA_ym({2023},:))
+print(SIA_ym({2023},:)/sd)
+exit
 
 ;*********************
 ;plot anoms
