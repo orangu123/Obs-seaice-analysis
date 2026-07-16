@@ -26,8 +26,8 @@ begin
 ;  filoi = systemfunc("ls "+diroi+"ice_conc_sh_ease2-250_*.nc")
 
 
-filoi = diroi+"sic_pss25_"+array_append_record("197811-202512_v06r00.nc",\
- "2026"+sprinti("%0.2i",ispan(1,endat%100,1))+"_am2_icdr_v04r00.nc" ,0)
+filoi = diroi+"sic_pss25_"+array_append_record("197811-202605_v06r00.nc",\
+ "2026"+sprinti("%0.2i",ispan(6,endat%100,1))+"_am2_icdr_v04r00.nc" ,0)
   
  oiNam ="cdr_seaice_conc_monthly" ; "ice_conc" ; 
 
